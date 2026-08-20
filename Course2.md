@@ -19,12 +19,15 @@
 * Data type
 * Verification
 
-* Data silo: data trapped inside one tool or department, isolated from the rest of the business.
-* Data integration: joining separate data sources into one unified platform so they can be analyzed together.
-* Data source inventory: a structured catalog of what data you have, where it comes from, and what shape it's in.
-
 - **Data source inventory** — a simple document listing each source, origin, shape, and risks  
 - **Why it matters** — helps prevent broken dashboards before connecting any files  
 - **Shared keys** — identify matching columns, like stock code, to join datasets later  
 - **Quality risks** — note issues early, like missing customer IDs or mixed cancellations  
 - **Quick import** — CSVs uploaded to Amazon Quick go into **SPICE** automatically  
+
+workflow:
+- **Data silos** — business data lives in separate tools and can’t answer cross-system questions  
+- **Data integration** — combine sources into one place so they can be analyzed together  
+- **Inventory first** — document each source’s contents, shared keys, shape, and risks before connecting  (Data source inventory: a structured catalog of what data you have, where it comes from, and what shape it's in)
+- **SPICE uploads** — CSVs go into **SPICE**; manual uploads cap at 1 GB  
+- **Verify after upload** — check data types and confirm row counts match the original file  
